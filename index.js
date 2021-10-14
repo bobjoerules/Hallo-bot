@@ -113,9 +113,11 @@ client.on('message', async (message) => {
    var used = true
   }
   if (message.content.toLowerCase().includes('hi') || message.content.toLowerCase().includes('hello')) {
-    var hellos = ['Hi 👋', 'Hello 👋','Sup 👋','What\'s up 👋','Ello 👋','Sup hotty 👋 ||Lol||','“Good morning”, “Good afternoon”, or “Good evening” 👋', 'It\'s good to see you 👋', 'G\'day 👋','Howdy 👋', 'Hey 👋', 'Hey there 👋', 'Yo 👋', '👋', 'Hallo 👋'];
+    var hellos = ['Hi', 'Hello','Sup','What\'s up','Ello','Sup hotty ||Lol||','“Good morning”, “Good afternoon”, or “Good evening”', 'It\'s good to see you', 'G\'day','Howdy', 'Hey', 'Hey there', 'Yo', '', 'Hallo'];
+    var emojis =[' 👋', ' 😀'];
     var hallo = Math.floor(Math.random() * hellos.length);
-    message.lineReply(hellos[hallo]);
+    var emoji = Math.floor(Math.random() * emojis.length);
+    message.lineReply(hellos[hallo] + emojis[emoji]);
     var used = true
   }
   if (used) {
