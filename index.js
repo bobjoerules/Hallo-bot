@@ -25,7 +25,7 @@ client.once('ready', async () => {
    status: "online"
   });
   //shows how many servers and uses he bot has the uses is not spot on to true amount
-	client.user.setActivity('Sup👋', { type: 'STREAMING', url: 'https://youtu.be/gghDRJVxFxU' });
+	client.user.setActivity('Sup👋', { type: 'STREAMING', url: 'https://www.youtube.com/watch?v=gghDRJVxFxU' });
   //shows stats on my bot on my server
   let guild = client.guilds.cache.get('814940437751660595');
   let serversin = guild.channels.cache.get('881241918632251543')
